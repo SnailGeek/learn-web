@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+
+      .pBox1 {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+      }
+      .pBox1 .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        position: absolute;
+        bottom: 100px;
+        right: 100px;
+      }
+      .pBox2 {
+        width: 200px;
+        height: 200px;
+        background-color: deeppink;
+        position: relative;
+      }
+      .pBox2 .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+      }
+      .gBox1 {
+        width: 400px;
+        height: 400px;
+        background-color: skyblue;
+        position: relative;
+      }
+      .pBox3 {
+        width: 200px;
+        height: 200px;
+        background-color: deepskyblue;
+      }
+      .gBox1 .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">无父元素</div>
+    <div class="pBox1">
+      父1-无定位
+      <div class="box1">父1-无定位-子</div>
+    </div>
+    <div class="pBox2">
+      父2-相对定位
+      <div class="box2">父2-相对定位-子</div>
+    </div>
+    <div class="gBox1">
+      爷-相对定位
+      <div class="pBox3">
+        <div class="box3">爷-相对定位-子</div>
+      </div>
+    </div>
+  </body>
+</html>

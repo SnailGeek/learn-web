@@ -1,0 +1,38 @@
+<!--
+ * @Author: wangf-q wangf-q@glodon.com
+ * @Date: 2025-04-18 16:51:43
+ * @LastEditors: wangf-q wangf-q@glodon.com
+ * @LastEditTime: 2025-04-18 17:03:59
+ * @FilePath: \CSS\03-浮动\01-为什么用浮动.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .left,
+      .right,
+      .middle {
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+      }
+      .middle {
+        float: right;
+      }
+      .right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left">左青龙</div>
+    <div class="middle">玄武1</div>
+    <div class="middle">玄武2</div>
+    <div class="right">右白虎</div>
+  </body>
+</html>
