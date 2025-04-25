@@ -6,12 +6,18 @@
     <title>Document</title>
     <style>
       li {
+        /* position: relative; */
         float: left;
         list-style: none;
         width: 30px;
         height: 60px;
         border: 1px solid black;
-        /* margin-left: -1px; */
+        margin-left: -1px;
+      }
+      li:hover {
+        /* position: relative; */
+        z-index: 1;
+        border: 1px solid blue;
       }
     </style>
   </head>
