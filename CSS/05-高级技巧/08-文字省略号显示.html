@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 150px;
+        height: 80px;
+        background-color: pink;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .box2 {
+        margin-top: 50px;
+        width: 150px;
+        height: 80px;
+        background-color: pink;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">这是一个忧伤的故事，此处省略一万字</div>
+    <div class="box2">这是一个忧伤透漏着搞笑的故事，此处省略一万字</div>
+  </body>
+</html>
